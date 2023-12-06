@@ -1,0 +1,32 @@
+{
+    "name": "piotrpress/composer-downloads",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "description": "This composer plugin adds support for environment variables in composer.json packages URLs.",
+    "homepage": "https://github.com/PiotrPress/composer-downloads",
+    "authors": [
+        {
+            "name": "Piotr Niewiadomski",
+            "homepage": "https://piotr.press"
+        }
+    ],
+    "keywords": [
+        "composer", "composer plugin", "download", "downloads", "env", "envs", "package", "packages", "url", "urls", "php"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer-plugin-api": "^2.0"
+    },
+    "extra": {
+        "class": "PiotrPress\\Composer\\Downloads\\Plugin",
+        "plugin-modifies-downloads": true
+    },
+    "autoload": {
+        "psr-4": {
+            "PiotrPress\\Composer\\Downloads\\": "src/"
+        },
+        "classmap": [
+            "src"
+        ]
+    }
+}
